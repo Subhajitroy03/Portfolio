@@ -1,0 +1,86 @@
+{
+    "about": {
+        "description": "Passionate backend and mobile app developer with 5+ years of experience building scalable server-side applications and user-friendly mobile experiences. I specialize in creating robust APIs, microservices, and cross-platform mobile applications that deliver exceptional performance and user satisfaction.",
+        "skills": {
+            "backend": ["Node.js", "Python", "Java", "C#", "Go", "PHP", "Ruby"],
+            "mobile": ["React Native", "Flutter", "Swift", "Kotlin", "Xamarin", "Ionic"],
+            "tools": ["PostgreSQL", "MongoDB", "Redis", "Docker", "AWS", "Firebase", "Kubernetes"]
+        }
+    },
+    "experience": [
+        {
+            "date": "2023 - Present",
+            "title": "Senior Backend Developer",
+            "company": "Tech Solutions Inc.",
+            "description": "Lead backend development for enterprise applications, design scalable microservices architecture, and mentor junior developers. Implemented CI/CD pipelines and improved system performance by 40%. Responsible for architecture decisions and technical leadership."
+        },
+        {
+            "date": "2021 - 2023",
+            "title": "Full Stack Developer",
+            "company": "StartupCorp",
+            "description": "Developed mobile applications and backend APIs for fintech startup. Built RESTful APIs serving 100K+ users and created cross-platform mobile apps with React Native. Collaborated with product team to deliver features on tight deadlines."
+        },
+        {
+            "date": "2019 - 2021",
+            "title": "Backend Developer",
+            "company": "Digital Agency",
+            "description": "Built custom backend solutions for various clients, integrated third-party APIs, and optimized database performance. Worked with diverse technologies and client requirements. Delivered 20+ successful projects across different industries."
+        },
+        {
+            "date": "2018 - 2019",
+            "title": "Junior Developer",
+            "company": "Code Academy",
+            "description": "Started career developing small web applications and learning industry best practices. Gained experience in multiple programming languages and frameworks. Participated in code reviews and agile development processes."
+        }
+    ],
+    "projects": [
+        {
+            "title": "E-Commerce API Platform",
+            "description": "Scalable microservices-based e-commerce platform handling 50K+ transactions daily. Features include inventory management, payment processing, and real-time analytics. Built with modern cloud-native architecture.",
+            "technologies": ["Node.js", "PostgreSQL", "Redis", "Docker", "AWS", "RabbitMQ"],
+            "github": "https://github.com/username/ecommerce-api",
+            "demo": "https://demo.ecommerce-api.com"
+        },
+        {
+            "title": "Task Management Mobile App",
+            "description": "Cross-platform mobile application for team collaboration and task management. Features real-time updates, offline synchronization, and push notifications. Supports multiple project management methodologies.",
+            "technologies": ["React Native", "Firebase", "Redux", "TypeScript", "Expo"],
+            "github": "https://github.com/username/task-app",
+            "demo": "https://taskapp.demo.com"
+        },
+        {
+            "title": "Real-time Chat System",
+            "description": "Distributed chat application supporting 10K+ concurrent users with WebSocket connections and message persistence. Features include file sharing, group chats, and message encryption.",
+            "technologies": ["Socket.io", "MongoDB", "Node.js", "React", "WebRTC"],
+            "github": "https://github.com/username/chat-system",
+            "demo": "https://chat.demo.com"
+        },
+        {
+            "title": "IoT Data Processing Pipeline",
+            "description": "High-throughput data processing system for IoT devices. Processes millions of sensor readings daily with real-time analytics and anomaly detection. Handles data from 1000+ connected devices.",
+            "technologies": ["Python", "Apache Kafka", "InfluxDB", "Grafana", "TensorFlow"],
+            "github": "https://github.com/username/iot-pipeline",
+            "demo": "https://iot-dashboard.demo.com"
+        },
+        {
+            "title": "Blockchain Voting System",
+            "description": "Secure and transparent voting system built on blockchain technology. Ensures vote integrity and provides real-time results. Features voter authentication and audit trails.",
+            "technologies": ["Solidity", "Web3.js", "Ethereum", "React", "IPFS"],
+            "github": "https://github.com/username/blockchain-voting",
+            "demo": "https://voting.demo.com"
+        },
+        {
+            "title": "AI-Powered Content API",
+            "description": "RESTful API that leverages machine learning for content classification and recommendation. Processes thousands of articles daily and provides intelligent content suggestions.",
+            "technologies": ["Python", "FastAPI", "TensorFlow", "PostgreSQL", "Redis"],
+            "github": "https://github.com/username/ai-content-api",
+            "demo": "https://ai-api.demo.com"
+        }
+    ],
+    "contact": {
+        "email": "developer@example.com",
+        "linkedin": "https://linkedin.com/in/backend-developer",
+        "github": "https://github.com/backend-developer",
+        "twitter": "https://twitter.com/backend_dev"
+    }
+}
