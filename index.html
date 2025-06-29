@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Backend & App Developer</title>
+    <title>Subhajit Roy - Backend & App Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -11,9 +11,6 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">DEV</span>
-            </div>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
@@ -26,6 +23,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
@@ -43,19 +43,21 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="title-line">Backend &</span>
-                    <span class="title-line">App Developer</span>
-                </h1>
-                <p class="hero-subtitle">Crafting robust server-side solutions and scalable mobile applications</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <div class="hero-left">
+                    <h1 class="hero-title">SUBHAJIT ROY</h1>
+                    <h2 class="hero-role">
+                        <span class="role-line">Backend &</span>
+                        <span class="role-line">App Developer</span>
+                    </h2>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#" class="btn btn-secondary" id="resume-btn">Download Resume</a>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-scroll">
-                <div class="scroll-indicator">
-                    <span></span>
+                <div class="hero-right">
+                    <div class="hero-photo">
+                        <!-- Photo will be added here -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,20 +71,31 @@
                 <div class="section-line"></div>
             </div>
             <div class="about-content">
+                <div class="about-intro">
+                    <div class="intro-text">
+                        <h3 class="intro-title">WHO AM I?</h3>
+                        <p class="intro-description">I'm Subhajit Roy, a passionate backend and mobile app developer dedicated to building scalable, efficient, and user-centric solutions. With a strong foundation in server-side technologies and cross-platform development, I transform complex problems into elegant digital experiences.</p>
+                    </div>
+                </div>
                 <div class="about-text">
-                    <p class="about-description"></p>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Backend Technologies</h3>
-                            <div class="skills-list" id="backend-skills"></div>
+                    <div class="skills-section">
+                        <div class="section-header">
+                            <h2 class="section-title skills-title">Skills and Technologies</h2>
+                            <div class="section-line"></div>
                         </div>
-                        <div class="skill-category">
-                            <h3>Mobile Development</h3>
-                            <div class="skills-list" id="mobile-skills"></div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Databases & Tools</h3>
-                            <div class="skills-list" id="tools-skills"></div>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Backend Technologies</h3>
+                                <div class="skills-list" id="backend-skills"></div>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Mobile Development</h3>
+                                <div class="skills-list" id="mobile-skills"></div>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Databases & Tools</h3>
+                                <div class="skills-list" id="tools-skills"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,6 +125,19 @@
             </div>
             <div class="projects-grid" id="projects-grid">
                 <!-- Projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-content" id="education-content">
+                <!-- Education items will be populated by JavaScript -->
             </div>
         </div>
     </section>
@@ -152,7 +178,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Backend & App Developer. All rights reserved.</p>
+                <p>&copy; 2025 Subhajit Roy. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#privacy">Privacy Policy</a>
                     <a href="#terms">Terms of Service</a>

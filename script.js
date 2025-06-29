@@ -60,50 +60,64 @@ function getFallbackData() {
                 title: "E-Commerce API Platform",
                 description: "Scalable microservices-based e-commerce platform handling 50K+ transactions daily. Features include inventory management, payment processing, and real-time analytics. Built with modern cloud-native architecture.",
                 technologies: ["Node.js", "PostgreSQL", "Redis", "Docker", "AWS", "RabbitMQ"],
-                github: "https://github.com/username/ecommerce-api",
+                github: "https://github.com/subhajit-roy/ecommerce-api",
                 demo: "https://demo.ecommerce-api.com"
             },
             {
                 title: "Task Management Mobile App",
                 description: "Cross-platform mobile application for team collaboration and task management. Features real-time updates, offline synchronization, and push notifications. Supports multiple project management methodologies.",
                 technologies: ["React Native", "Firebase", "Redux", "TypeScript", "Expo"],
-                github: "https://github.com/username/task-app",
+                github: "https://github.com/subhajit-roy/task-app",
                 demo: "https://taskapp.demo.com"
             },
             {
                 title: "Real-time Chat System",
                 description: "Distributed chat application supporting 10K+ concurrent users with WebSocket connections and message persistence. Features include file sharing, group chats, and message encryption.",
                 technologies: ["Socket.io", "MongoDB", "Node.js", "React", "WebRTC"],
-                github: "https://github.com/username/chat-system",
+                github: "https://github.com/subhajit-roy/chat-system",
                 demo: "https://chat.demo.com"
             },
             {
                 title: "IoT Data Processing Pipeline",
                 description: "High-throughput data processing system for IoT devices. Processes millions of sensor readings daily with real-time analytics and anomaly detection. Handles data from 1000+ connected devices.",
                 technologies: ["Python", "Apache Kafka", "InfluxDB", "Grafana", "TensorFlow"],
-                github: "https://github.com/username/iot-pipeline",
+                github: "https://github.com/subhajit-roy/iot-pipeline",
                 demo: "https://iot-dashboard.demo.com"
             },
             {
                 title: "Blockchain Voting System",
                 description: "Secure and transparent voting system built on blockchain technology. Ensures vote integrity and provides real-time results. Features voter authentication and audit trails.",
                 technologies: ["Solidity", "Web3.js", "Ethereum", "React", "IPFS"],
-                github: "https://github.com/username/blockchain-voting",
+                github: "https://github.com/subhajit-roy/blockchain-voting",
                 demo: "https://voting.demo.com"
             },
             {
                 title: "AI-Powered Content API",
                 description: "RESTful API that leverages machine learning for content classification and recommendation. Processes thousands of articles daily and provides intelligent content suggestions.",
                 technologies: ["Python", "FastAPI", "TensorFlow", "PostgreSQL", "Redis"],
-                github: "https://github.com/username/ai-content-api",
+                github: "https://github.com/subhajit-roy/ai-content-api",
                 demo: "https://ai-api.demo.com"
             }
         ],
+        education: [
+            {
+                degree: "Bachelor of Technology in Computer Science",
+                school: "Indian Institute of Technology",
+                date: "2014 - 2018",
+                description: "Specialized in software engineering and data structures. Graduated with honors and participated in various coding competitions and hackathons."
+            },
+            {
+                degree: "Master of Science in Software Engineering",
+                school: "University of Technology",
+                date: "2018 - 2020",
+                description: "Advanced studies in distributed systems, microservices architecture, and mobile application development. Thesis on scalable backend systems."
+            }
+        ],
         contact: {
-            email: "developer@example.com",
-            linkedin: "https://linkedin.com/in/backend-developer",
-            github: "https://github.com/backend-developer",
-            twitter: "https://twitter.com/backend_dev"
+            email: "subhajitroy@example.com",
+            linkedin: "https://linkedin.com/in/subhajit-roy",
+            github: "https://github.com/subhajit-roy",
+            twitter: "https://twitter.com/subhajit_roy"
         }
     };
 }
@@ -111,12 +125,6 @@ function getFallbackData() {
 // Populate content from data
 function populateContent() {
     try {
-        // Populate about section
-        const aboutDesc = document.querySelector('.about-description');
-        if (aboutDesc && portfolioData.about && portfolioData.about.description) {
-            aboutDesc.textContent = portfolioData.about.description;
-        }
-        
         // Populate skills
         if (portfolioData.about && portfolioData.about.skills) {
             populateSkills('backend-skills', portfolioData.about.skills.backend || []);
@@ -129,6 +137,9 @@ function populateContent() {
         
         // Populate projects
         populateProjects();
+        
+        // Populate education
+        populateEducation();
         
         // Populate contact
         populateContact();
@@ -198,6 +209,25 @@ function populateProjects() {
         `).join('');
     } catch (error) {
         console.error('Error populating projects:', error);
+    }
+}
+
+// Populate education with error handling
+function populateEducation() {
+    try {
+        const educationContent = document.getElementById('education-content');
+        if (!educationContent || !Array.isArray(portfolioData.education)) return;
+        
+        educationContent.innerHTML = portfolioData.education.map((edu, index) => `
+            <div class="education-item">
+                <h3 class="education-degree">${escapeHtml(edu.degree || '')}</h3>
+                <div class="education-school">${escapeHtml(edu.school || '')}</div>
+                <div class="education-date">${escapeHtml(edu.date || '')}</div>
+                <p class="education-description">${escapeHtml(edu.description || '')}</p>
+            </div>
+        `).join('');
+    } catch (error) {
+        console.error('Error populating education:', error);
     }
 }
 
@@ -337,20 +367,30 @@ function initContactForm() {
     }
 }
 
-// Enhanced scroll indicator
-function initScrollIndicator() {
+// Resume download functionality
+function initResumeDownload() {
     try {
-        const scrollIndicator = document.querySelector('.scroll-indicator');
-        if (!scrollIndicator) return;
+        const resumeBtn = document.getElementById('resume-btn');
+        if (!resumeBtn) return;
         
-        scrollIndicator.addEventListener('click', function() {
-            const aboutSection = document.querySelector('#about');
-            if (aboutSection) {
-                aboutSection.scrollIntoView({ behavior: 'smooth' });
-            }
+        resumeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Create a temporary download link
+            const link = document.createElement('a');
+            link.href = '#'; // Replace with actual resume file path
+            link.download = 'Subhajit_Roy_Resume.pdf';
+            
+            // For demo purposes, show an alert
+            alert('Resume download would start here. Please add your actual resume file to the project and update the href in script.js');
+            
+            // Uncomment the following lines when you have an actual resume file:
+            // document.body.appendChild(link);
+            // link.click();
+            // document.body.removeChild(link);
         });
     } catch (error) {
-        console.error('Error initializing scroll indicator:', error);
+        console.error('Error initializing resume download:', error);
     }
 }
 
@@ -361,7 +401,7 @@ function init() {
         initMobileMenu();
         initSmoothScroll();
         initContactForm();
-        initScrollIndicator();
+        initResumeDownload();
     } catch (error) {
         console.error('Error during initialization:', error);
     }
