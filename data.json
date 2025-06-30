@@ -2,36 +2,25 @@
     "about": {
         "description": "Passionate backend and mobile app developer with 5+ years of experience building scalable server-side applications and user-friendly mobile experiences. I specialize in creating robust APIs, microservices, and cross-platform mobile applications that deliver exceptional performance and user satisfaction.",
         "skills": {
-            "backend": ["Node.js", "Python", "Java", "C#", "Go", "PHP", "Ruby"],
-            "mobile": ["React Native", "Flutter", "Swift", "Kotlin", "Xamarin", "Ionic"],
-            "tools": ["PostgreSQL", "MongoDB", "Redis", "Docker", "AWS", "Firebase", "Kubernetes"]
+            "langauges": ["Python", "Java", "C/C++", "Javascript","HTML","Kotlin"],
+            "frameworks": ["Express.JS"],
+            "tools": ["PostgreSQL", "MongoDB", "Docker", "AWS", "Firebase", "mySQL", "CSS/Tailwind CSS"]
         }
     },
     "experience": [
         {
-            "date": "2023 - Present",
-            "title": "Senior Backend Developer",
-            "company": "Tech Solutions Inc.",
-            "description": "Lead backend development for enterprise applications, design scalable microservices architecture, and mentor junior developers. Implemented CI/CD pipelines and improved system performance by 40%. Responsible for architecture decisions and technical leadership."
+            "date": "June 2025 - Present",
+            "title": "Junior Software Developer Intern",
+            "company": "Resourcio Pvt Ltd",
+            "description": "Working on client projects involving full-stack web development. Responsible for building responsive user interfaces using HTML, CSS, and JavaScript, integrating APIs, and assisting in backend logic. Collaborating with the development team to deliver scalable and maintainable solutions tailored to client requirements."
         },
         {
-            "date": "2021 - 2023",
-            "title": "Full Stack Developer",
-            "company": "StartupCorp",
-            "description": "Developed mobile applications and backend APIs for fintech startup. Built RESTful APIs serving 100K+ users and created cross-platform mobile apps with React Native. Collaborated with product team to deliver features on tight deadlines."
-        },
-        {
-            "date": "2019 - 2021",
-            "title": "Backend Developer",
-            "company": "Digital Agency",
-            "description": "Built custom backend solutions for various clients, integrated third-party APIs, and optimized database performance. Worked with diverse technologies and client requirements. Delivered 20+ successful projects across different industries."
-        },
-        {
-            "date": "2018 - 2019",
-            "title": "Junior Developer",
-            "company": "Code Academy",
-            "description": "Started career developing small web applications and learning industry best practices. Gained experience in multiple programming languages and frameworks. Participated in code reviews and agile development processes."
+            "date": "2024-Present",
+            "title": "Tech-Team Member",
+            "company": "Student Chapter CSE, AOT",
+            "description": "Contributing to the technical initiatives of the CSE student chapter by developing and maintaining web applications, automating tasks, and assisting in organizing technical events and workshops. Collaborate with peers on projects involving frontend and backend development, aiming to enhance the community's digital presence and engagement."
         }
+        
     ],
     "projects": [
         {
