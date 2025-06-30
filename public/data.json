@@ -1,0 +1,90 @@
+{
+    "about": {
+        "description": "Passionate backend and mobile app developer with 5+ years of experience building scalable server-side applications and user-friendly mobile experiences. I specialize in creating robust APIs, microservices, and cross-platform mobile applications that deliver exceptional performance and user satisfaction.",
+        "skills": {
+            "langauges": ["Python", "Java", "C/C++", "Javascript","HTML","Kotlin"],
+            "frameworks": ["Express.JS"],
+            "tools": ["PostgreSQL", "MongoDB", "Docker", "AWS", "Firebase", "mySQL", "CSS/Tailwind CSS"]
+        }
+    },
+    "experience": [
+        {
+            "date": "June 2025 - Present",
+            "title": "Junior Software Developer Intern",
+            "company": "Resourcio Pvt Ltd",
+            "description": "Working on client projects involving full-stack web development. Responsible for building responsive user interfaces using HTML, CSS, and JavaScript, integrating APIs, and assisting in backend logic. Collaborating with the development team to deliver scalable and maintainable solutions tailored to client requirements."
+        },
+        {
+            "date": "2024-Present",
+            "title": "Tech-Team Member",
+            "company": "Student Chapter CSE, AOT",
+            "description": "Contributing to the technical initiatives of the CSE student chapter by developing and maintaining web applications, automating tasks, and assisting in organizing technical events and workshops. Collaborate with peers on projects involving frontend and backend development, aiming to enhance the community's digital presence and engagement."
+        }
+        
+    ],
+    "projects": [
+        {
+            "title": "Pain-O-Relief",
+            "description": "Pain-O-Relief is a user-friendly platform providing personalized exercise routines and support for individuals, especially students and professionals, with joint, back, neck and muscle pain. Its goal is to alleviate pain and improve mobility with accessible, effective solutions for all ages. It includes interactive features like a chatbot, live doctor consultation, and a recommendation system to enhance the user experience.",
+            "technologies": ["HTML", "CSS", "JavaScript","Node.js","MongoDB","EJS","Botpress","Agora"],
+            "github": "https://github.com/Subhajitroy03/Pain-O-Relief",
+            "demo": "#"
+        },
+        {
+            "title": "Weather App",
+            "description": "This web application provides real-time weather information for any city using the WeatherAPI. Users can search for any location worldwide and view key weather details, including the city name (with region and country), temperature (°C), last updated time, humidity, feels-like temperature (°C), precipitation (mm), wind speed (km/hr), and current weather conditions. The interface is clean and user-friendly, making it easy to access accurate weather updates quickly.",
+            "technologies": ["HTML", "CSS", "JavaScript","RapidAPI"],
+            "github": "https://github.com/Subhajitroy03/Weather-App",
+            "demo": "#"
+        },
+        {
+            "title": "LRU Cache System ",
+            "description": "This C++ project implements an LRU (Least Recently Used) Cache using a doubly linked list and `std::map`. It supports efficient `get()` and `put()` operations in O(1) time, automatically evicting the least recently used items when capacity is reached. It also allows interactive user input and cache display.",
+            "technologies": ["C++"],
+            "github": "https://github.com/Subhajitroy03/LRU-Cache-System",
+            "demo": "#"
+        },
+        {
+            "title": "Three Variable Equation Solver",
+            "description": "This Python project is a GUI application using Tkinter to solve a system of three linear equations with three variables. It takes user input, forms matrices, calculates the determinant, and uses NumPy to find solutions. It displays the result or appropriate messages for infinite or no solutions, with input clearing options.",
+            "technologies": ["Python","Tkinter","NumPy"],
+            "github": "https://github.com/Subhajitroy03/GUI-with-TKinter/blob/master/Linear%20Equation%20solver.py",
+            "demo": "#"
+        },
+        {
+            "title": "Vaani",
+            "description": "Volunteer Service: Contributed to the official website development for the AICTE-VAANI initiative, a scheme by AICTE to promote technical education and research in regional Indian languages. The website highlights the scheme objectives, department details, and the national seminar held on 15th–16th November 2024, organized by the Department of Computer Science & Engineering, Academy of Technology",
+            "technologies": ["HTML", "Tailwind CSS", "JavaScript"],
+            "github": "#",
+            "demo": "https://www.vaani.aot.edu.in/index.html"
+        },
+        {
+            "title": "The Gnosis Week",
+            "description": "Volunteer Service: Contributed to backend development for the event, focusing on building and implementing core functionalities for the Treasure Hunt CTF competition. Worked closely with the tech team to ensure smooth execution, secure data handling, and a responsive challenge-solving system for participants.",
+            "technologies": ["Node.JS","ExpressJS"],
+            "github": "https://github.com/Subhajitroy03/treasurehunt-ctf-backend",
+            "demo": "#"
+        }
+    ],
+    "education": [
+    {
+        "degree": "School Education (CBSE)",
+        "school": "Satish Chandra Memorial School, Chakdaha, India",
+        "date": "April 2007 – June 2022",
+        "description": "Completed secondary and higher secondary education with 97% in Class 10 and 92.6% in Class 12. Scored 100% in Mathematics in Class 10, and in Class 12 secured 99 in Mathematics and 96 in Computer Science."
+    },
+    {
+        "degree": "Bachelor of Technology in Computer Science",
+        "school": "Academy of Technology",
+        "date": "2023–Present",
+        "description": "Specializing in software engineering and data structures, with hands-on experience in real-world projects. Actively participating in coding competitions and hackathons to enhance problem-solving and development skills."
+    }
+]
+,
+    "contact": {
+       "email": "roysubhajit2003@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/subhajit-roy-6b2673277/",
+        "github": "https://github.com/Subhajitroy03",
+        "Instagram": "https://www.instagram.com/subhajit_roy03/"
+    }
+}
