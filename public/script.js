@@ -310,8 +310,17 @@ function initSmoothScroll() {
     }
 }
 
+// Global flag to prevent multiple form initializations
+let contactFormInitialized = false;
+
 // Contact form handling with enhanced feedback
 function initContactForm() {
+    // Prevent multiple initializations
+    if (contactFormInitialized) {
+        console.log('Contact form already initialized, skipping...');
+        return;
+    }
+
     const form = document.getElementById('contact-form');
     if (!form) return;
 
@@ -319,20 +328,34 @@ function initContactForm() {
     if (!submitBtn) return;
 
     const originalText = submitBtn.textContent;
-
     let isSubmitting = false; // Prevent multiple submissions
 
-    form.addEventListener('submit', async function (e) {
+    // Remove any existing event listeners
+    const newForm = form.cloneNode(true);
+    form.parentNode.replaceChild(newForm, form);
+    
+    // Get references to the new form elements
+    const freshForm = document.getElementById('contact-form');
+    const freshSubmitBtn = freshForm.querySelector('.btn-primary');
+
+    freshForm.addEventListener('submit', async function (e) {
         e.preventDefault();
-        if (isSubmitting) return; // Skip if already submitting
+        e.stopPropagation(); // Prevent event bubbling
+        
+        if (isSubmitting) {
+            console.log('Form already submitting, ignoring duplicate submission');
+            return;
+        }
+        
         isSubmitting = true;
+        console.log('Form submission started');
 
-        submitBtn.textContent = 'SENDING...';
-        submitBtn.disabled = true;
-        submitBtn.style.opacity = '0.7';
-        submitBtn.style.pointerEvents = 'none';
+        freshSubmitBtn.textContent = 'SENDING...';
+        freshSubmitBtn.disabled = true;
+        freshSubmitBtn.style.opacity = '0.7';
+        freshSubmitBtn.style.pointerEvents = 'none';
 
-        const formData = new FormData(form);
+        const formData = new FormData(freshForm);
         const data = {
             name: formData.get('name'),
             email: formData.get('email'),
@@ -349,11 +372,11 @@ function initContactForm() {
             });
 
             if (response.ok) {
-                submitBtn.textContent = 'MESSAGE SENT!';
-                submitBtn.style.background = '#000';
-                submitBtn.style.color = '#fff';
+                freshSubmitBtn.textContent = 'MESSAGE SENT!';
+                freshSubmitBtn.style.background = '#000';
+                freshSubmitBtn.style.color = '#fff';
                 alert(`Thank you ${data.name || 'User'}! Your message has been sent.`);
-                form.reset();
+                freshForm.reset();
             } else {
                 alert('❌ Failed to send message. Please try again later.');
             }
@@ -362,20 +385,22 @@ function initContactForm() {
             alert('❌ Something went wrong while sending your message.');
         } finally {
             // Reset button state
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-            submitBtn.style.opacity = '';
-            submitBtn.style.pointerEvents = '';
-            submitBtn.style.background = '';
-            submitBtn.style.color = '';
-            isSubmitting = false;
+            setTimeout(() => {
+                freshSubmitBtn.textContent = originalText;
+                freshSubmitBtn.disabled = false;
+                freshSubmitBtn.style.opacity = '';
+                freshSubmitBtn.style.pointerEvents = '';
+                freshSubmitBtn.style.background = '';
+                freshSubmitBtn.style.color = '';
+                isSubmitting = false;
+                console.log('Form submission completed');
+            }, 1000);
         }
     });
+
+    contactFormInitialized = true;
+    console.log('Contact form initialized successfully');
 }
-
-// Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', initContactForm);
-
 
 // Resume download functionality
 function initResumeDownload() {
@@ -407,14 +432,14 @@ function init() {
         loadPortfolioData();
         initMobileMenu();
         initSmoothScroll();
-        initContactForm();
+        initContactForm(); // Only called once here
         initResumeDownload();
     } catch (error) {
         console.error('Error during initialization:', error);
     }
 }
 
-// Start when DOM is loaded
+// Start when DOM is loaded - SINGLE ENTRY POINT
 document.addEventListener('DOMContentLoaded', init);
 
 // Handle page load
