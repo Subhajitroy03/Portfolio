@@ -56,6 +56,30 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 8px solid #fff;
     box-shadow: 0 8px 0 #000;
 }
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.logo-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* change as needed */
+    border-radius: 50%;
+    width: 40px;  /* Adjust size */
+    height: 40px; /* Adjust size */
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Optional shadow */
+}
+
+.logo-img {
+    width: 160%;
+    height: auto;
+    border-radius: 50%; /* If you want the image itself round too */
+}
 
 .nav-container {
     max-width: 1200px;
@@ -889,28 +913,28 @@ h1, h2, h3, h4, h5, h6 {
     .container {
         padding: 0 15px;
     }
-    
+
     .nav-container {
         padding: 0 15px;
     }
-    
+
     .hero-container {
         padding: 0 15px;
     }
-    
+
     .hero-content {
         gap: 40px;
     }
-    
+
     .hero-image {
-        width: clamp(180px, 22vw, 280px);
-        height: clamp(180px, 22vw, 280px);
+        width: clamp(200px, 24vw, 300px);
+        height: clamp(200px, 24vw, 300px);
     }
-    
+
     .contact-content {
         gap: 30px;
     }
-    
+
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 25px;
@@ -941,7 +965,16 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
         position: relative;
     }
-
+    .logo-circle {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+    }
+    
+    .logo-img {
+        width: 100%;
+        height: auto;
+    }
     .hamburger {
         width: 40px;
         height: 40px;
@@ -967,7 +1000,6 @@ h1, h2, h3, h4, h5, h6 {
         gap: 0;
         height: calc(100vh - 70px);
         overflow-y: auto;
-        /* Hide scrollbar for mobile menu */
         scrollbar-width: none;
         -ms-overflow-style: none;
         z-index: 1000;
@@ -1012,8 +1044,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-image {
-        width: clamp(150px, 35vw, 220px);
-        height: clamp(150px, 35vw, 220px);
+        width: clamp(170px, 38vw, 240px);
+        height: clamp(170px, 38vw, 240px);
     }
 
     .hero-title {
@@ -1049,7 +1081,6 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 40px;
     }
 
-    /* Experience Timeline Mobile - COMPLETELY LEFT ALIGNED */
     .timeline {
         max-width: 100%;
         padding: 0;
@@ -1057,7 +1088,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .timeline::before {
-        display: none; /* Remove the center line completely */
+        display: none;
     }
 
     .timeline-item {
@@ -1077,7 +1108,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .timeline-item::before {
-        display: none; /* Remove all timeline dots */
+        display: none;
     }
 
     .timeline-content {
@@ -1204,7 +1235,16 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 10px;
         height: 60px;
     }
-
+    .logo-circle {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo-img {
+        width: 100%;
+        height: auto;
+    }
+    
     .hero-container {
         padding: 0 10px;
     }
@@ -1237,8 +1277,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-image {
-        width: clamp(120px, 40vw, 180px);
-        height: clamp(120px, 40vw, 180px);
+        width: clamp(140px, 45vw, 200px);
+        height: clamp(140px, 45vw, 200px);
     }
 
     .btn {
@@ -1256,7 +1296,6 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 30px;
     }
 
-    /* Experience Timeline Ultra Mobile - COMPLETELY LEFT ALIGNED */
     .timeline {
         padding: 0;
         margin: 0;
@@ -1370,7 +1409,16 @@ h1, h2, h3, h4, h5, h6 {
         padding: 5px;
         right: 10px;
     }
-
+    .logo-circle {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .logo-img {
+        width: 100%;
+        height: auto;
+    }
+    
     .bar {
         width: 18px;
         height: 2px;
@@ -1387,8 +1435,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-image {
-        width: clamp(100px, 45vw, 150px);
-        height: clamp(100px, 45vw, 150px);
+        width: clamp(220px, 55vw, 270px);
+        height: clamp(220px, 55vw, 270px);
     }
 
     .btn {
@@ -1397,7 +1445,6 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 200px;
     }
 
-    /* Experience Timeline Smallest - COMPLETELY LEFT ALIGNED */
     .timeline-item {
         padding: 0;
         margin-bottom: 12px;
