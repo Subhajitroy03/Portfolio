@@ -927,8 +927,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-image {
-        width: clamp(200px, 24vw, 300px);
-        height: clamp(200px, 24vw, 300px);
+        width: clamp(300px, 30vw, 400px);
+        height: clamp(300px, 30vw, 400px);
     }
 
     .contact-content {
@@ -1044,8 +1044,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-image {
-        width: clamp(170px, 38vw, 240px);
-        height: clamp(170px, 38vw, 240px);
+        width: clamp(270px, 40vw, 270px);
+        height: clamp(270px, 40vw, 270px);
     }
 
     .hero-title {
@@ -1236,8 +1236,8 @@ h1, h2, h3, h4, h5, h6 {
         height: 60px;
     }
     .logo-circle {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     
     .logo-img {
@@ -1277,8 +1277,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-image {
-        width: clamp(140px, 45vw, 200px);
-        height: clamp(140px, 45vw, 200px);
+        width: clamp(240px, 50vw, 300px);
+        height: clamp(240px, 50vw, 300pxx);
     }
 
     .btn {
@@ -1410,8 +1410,8 @@ h1, h2, h3, h4, h5, h6 {
         right: 10px;
     }
     .logo-circle {
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
     
     .logo-img {
@@ -1435,8 +1435,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-image {
-        width: clamp(220px, 55vw, 270px);
-        height: clamp(220px, 55vw, 270px);
+        width: clamp(320px, 60vw, 370px);
+        height: clamp(320px, 60vw, 370px);
     }
 
     .btn {
