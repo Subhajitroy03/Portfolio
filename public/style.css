@@ -951,7 +951,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .hamburger {
         display: flex;
         z-index: 1001;
@@ -1278,7 +1278,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero-image {
         width: clamp(240px, 50vw, 300px);
-        height: clamp(240px, 50vw, 300pxx);
+        height: clamp(240px, 50vw, 300px);
     }
 
     .btn {
@@ -1435,8 +1435,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-image {
-        width: clamp(320px, 60vw, 370px);
-        height: clamp(320px, 60vw, 370px);
+        width: clamp(200px, 40vw, 300px);
+        height: clamp(200px, 40vw, 300px);
     }
 
     .btn {
