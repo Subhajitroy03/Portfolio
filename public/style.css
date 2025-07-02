@@ -180,20 +180,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-photo {
-    width: 300px;
-    height: 300px;
-    border: 8px solid #000;
-    background: #fff;
-    transform: rotate(-3deg);
-    transition: all 0.2s ease;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-photo:hover {
+.hero-image {
+    width: clamp(300px, 30vw, 450px);
+    height: clamp(300px, 30vw, 450px);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s ease;
+    transform: rotate(-3deg);
+    box-shadow: 0 0 0 transparent;
+}
+
+.hero-image:hover {
     transform: rotate(0deg) translate(-8px, -8px);
-    box-shadow: 8px 8px 0 #000;
 }
 
 .hero-title {
@@ -893,9 +902,9 @@ h1, h2, h3, h4, h5, h6 {
         gap: 40px;
     }
     
-    .hero-photo {
-        width: 250px;
-        height: 250px;
+    .hero-image {
+        width: clamp(180px, 22vw, 280px);
+        height: clamp(180px, 22vw, 280px);
     }
     
     .contact-content {
@@ -1002,9 +1011,9 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
     }
 
-    .hero-photo {
-        width: 200px;
-        height: 200px;
+    .hero-image {
+        width: clamp(150px, 35vw, 220px);
+        height: clamp(150px, 35vw, 220px);
     }
 
     .hero-title {
@@ -1227,9 +1236,9 @@ h1, h2, h3, h4, h5, h6 {
         padding: 80px 0 50px;
     }
 
-    .hero-photo {
-        width: 150px;
-        height: 150px;
+    .hero-image {
+        width: clamp(120px, 40vw, 180px);
+        height: clamp(120px, 40vw, 180px);
     }
 
     .btn {
@@ -1377,9 +1386,9 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 12px;
     }
 
-    .hero-photo {
-        width: 120px;
-        height: 120px;
+    .hero-image {
+        width: clamp(100px, 45vw, 150px);
+        height: clamp(100px, 45vw, 150px);
     }
 
     .btn {
