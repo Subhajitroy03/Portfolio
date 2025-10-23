@@ -31,13 +31,31 @@ function getFallbackData() {
         },
         experience: [
             {
-                date: "June 2025 - Present",
+                date: "October 2025- Present",
+                title: "Tech Lead",
+                company: "IEI Student Chapter CSE, AOT",
+                description: "Leading the tech team at IEI Student Chapter CSE, AOT, managing projects, mentoring members, and delivering digital solutions for student initiatives."
+            },
+            {
+                date: "September 2025 - Present",
+                title: "Tech-Team Member",
+                company: "Resourcio Community",
+                description: "Contributing to the technical initiatives of the Resourcio Community by developing and maintaining web applications, automating tasks, and assisting in organizing technical events and workshops."
+            },
+            {
+                date: "September 2025 - Present",
+                title: "Tech-Team Member",
+                company: "GDG On Campus AOT",
+                description: "Contributing to the technical initiatives of GDG on Campus AOT by building and maintaining web applications, automating workflows, and supporting the organization of technical events and workshops."
+            },
+            {
+                date: "June 2025 - September 2025",
                 title: "Junior Software Developer Intern",
                 company: "Resourcio Pvt Ltd",
                 description: "Working on client projects involving full-stack web development. Responsible for building responsive user interfaces using HTML, CSS, and JavaScript, integrating APIs, and assisting in backend logic. Collaborating with the development team to deliver scalable and maintainable solutions tailored to client requirements."
             },
             {
-                date: "2024-Present",
+                date: "2024-2025",
                 title: "Tech-Team Member",
                 company: "Student Chapter CSE, AOT",
                 description: "Contributing to the technical initiatives of the CSE student chapter by developing and maintaining web applications, automating tasks, and assisting in organizing technical events and workshops. Collaborate with peers on projects involving frontend and backend development, aiming to enhance the community's digital presence and engagement."
@@ -45,6 +63,7 @@ function getFallbackData() {
             
         ],
         projects: [
+
             {
                 title: "Pain-O-Relief",
                 description: "Pain-O-Relief is a user-friendly platform providing personalized exercise routines and support for individuals, especially students and professionals, with joint, back, neck and muscle pain. Its goal is to alleviate pain and improve mobility with accessible, effective solutions for all ages. It includes interactive features like a chatbot, live doctor consultation, and a recommendation system to enhance the user experience.",
@@ -52,27 +71,7 @@ function getFallbackData() {
                 github: "https://github.com/Subhajitroy03/Pain-O-Relief",
                 demo: "#"
             },
-            {
-                title: "Weather App",
-                description: "This web application provides real-time weather information for any city using the WeatherAPI. Users can search for any location worldwide and view key weather details, including the city name (with region and country), temperature (°C), last updated time, humidity, feels-like temperature (°C), precipitation (mm), wind speed (km/hr), and current weather conditions. The interface is clean and user-friendly, making it easy to access accurate weather updates quickly.",
-                technologies: ["HTML", "CSS", "JavaScript","RapidAPI"],
-                github: "https://github.com/Subhajitroy03/Weather-App",
-                demo: "#"
-            },
-            {
-                title: "LRU Cache System",
-                description: "This C++ project implements an LRU (Least Recently Used) Cache using a doubly linked list and `std::map`. It supports efficient `get()` and `put()` operations in O(1) time, automatically evicting the least recently used items when capacity is reached. It also allows interactive user input and cache display.",
-                technologies: ["C++"],
-                github: "https://github.com/Subhajitroy03/LRU-Cache-System",
-                demo: "#"
-            },
-            {
-                title: "Three Variable Equation Solver",
-                description: "This Python project is a GUI application using Tkinter to solve a system of three linear equations with three variables. It takes user input, forms matrices, calculates the determinant, and uses NumPy to find solutions. It displays the result or appropriate messages for infinite or no solutions, with input clearing options.",
-                technologies: ["Python","Tkinter","NumPy"],
-                github: "https://github.com/Subhajitroy03/GUI-with-TKinter/blob/master/Linear%20Equation%20solver.py",
-                demo: "#"
-            },
+            
             {
                 title: "Vaani",
                 description: "Volunteer Service: Contributed to the official website development for the AICTE-VAANI initiative, a scheme by AICTE to promote technical education and research in regional Indian languages. The website highlights the scheme objectives, department details, and the national seminar held on 15th–16th November 2024, organized by the Department of Computer Science & Engineering, Academy of Technology",
