@@ -1,87 +1,93 @@
 {
     "about": {
-        "description": "Passionate backend and mobile app developer with 5+ years of experience building scalable server-side applications and user-friendly mobile experiences. I specialize in creating robust APIs, microservices, and cross-platform mobile applications that deliver exceptional performance and user satisfaction.",
+        "description": "Full-stack developer and Tech Lead with a focus on building scalable backend architectures and ML-integrated applications. Experienced in leading technical teams, managing end-to-end student projects, and delivering robust API solutions using modern frameworks.",
         "skills": {
-            "langauges": ["Python", "Java", "C/C++", "Javascript","HTML","Kotlin"],
-            "frameworks": ["Express.JS"],
-            "tools": ["PostgreSQL", "MongoDB", "Docker", "AWS", "Firebase", "mySQL", "CSS/Tailwind CSS"]
+            "languages": ["Python", "Java", "C/C++", "Javascript", "TypeScript", "Kotlin", "HTML"],
+            "frameworks": ["Express.js", "FastAPI", "React", "Node.js"],
+            "tools": ["PostgreSQL", "MongoDB", "Docker", "Redis", "AWS", "Firebase", "MySQL", "Tailwind CSS", "Strapi"]
         }
     },
     "experience": [
         {
-            "date": "October 2025- Present",
+            "date": "October 2025 - Present",
             "title": "Tech Lead",
             "company": "IEI Student Chapter CSE, AOT",
-            "description": "Leading the tech team at IEI Student Chapter CSE, AOT, managing projects, mentoring members, and delivering digital solutions for student initiatives."
-        },
-        {
-            "date": "September 2025 - Present",
-            "title": "Tech-Team Member",
-            "company": "Resourcio Community",
-            "description": "Contributing to the technical initiatives of the Resourcio Community by developing and maintaining web applications, automating tasks, and assisting in organizing technical events and workshops."
+            "description": "Leading the technical team and architecture for student-led projects. Designed and deployed a Task Manager system with automated reminders and currently overseeing the official SC-CSE website development."
         },
         {
             "date": "September 2025 - Present",
             "title": "Tech-Team Member",
             "company": "GDG On Campus AOT",
-            "description": "Contributing to the technical initiatives of GDG on Campus AOT by building and maintaining web applications, automating workflows, and supporting the organization of technical events and workshops."
+            "description": "Contributing to technical workshops and building web applications to support the Google Developer Groups campus community."
         },
         {
             "date": "June 2025 - September 2025",
             "title": "Junior Software Developer Intern",
             "company": "Resourcio Pvt Ltd",
-            "description": "Working on client projects involving full-stack web development. Responsible for building responsive user interfaces using HTML, CSS, and JavaScript, integrating APIs, and assisting in backend logic. Collaborating with the development team to deliver scalable and maintainable solutions tailored to client requirements."
+            "description": "Developed complete backend solutions using Strapi. Integrated REST APIs and content models to enable reliable data exchange for client-facing applications."
         },
         {
-            "date": "2024-2025",
+            "date": "2024 - 2025",
             "title": "Tech-Team Member",
             "company": "IEI Student Chapter CSE, AOT",
-            "description": "Contributing to the technical initiatives of the CSE student chapter by developing and maintaining web applications, automating tasks, and assisting in organizing technical events and workshops. Collaborate with peers on projects involving frontend and backend development, aiming to enhance the community's digital presence and engagement."
+            "description": "Supported frontend and backend development for community initiatives and assisted in technical event organization."
         }
-        
     ],
     "projects": [
         {
-            "title": "Pain-O-Relief",
-            "description": "Pain-O-Relief is a user-friendly platform providing personalized exercise routines and support for individuals, especially students and professionals, with joint, back, neck and muscle pain. Its goal is to alleviate pain and improve mobility with accessible, effective solutions for all ages. It includes interactive features like a chatbot, live doctor consultation, and a recommendation system to enhance the user experience.",
-            "technologies": ["HTML", "CSS", "JavaScript","Node.js","MongoDB","EJS","Botpress","Agora"],
-            "github": "https://github.com/Subhajitroy03/Pain-O-Relief",
+            "title": "GLOF Risk Intelligence",
+            "description": "Hackathon winner (Best Innovative Project). An ML-driven system for early detection of Glacial Lake Outburst Flood risks using Scikit-learn and XGBoost for classification.",
+            "technologies": ["React", "TypeScript", "Flask", "Scikit-learn", "XGBoost", "Pandas", "Twilio"],
+            "github": "https://github.com/Team-Nexarion/Glacier_backend",
             "demo": "#"
         },
         {
-            "title": "Vaani",
-            "description": "Volunteer Service: Contributed to the official website development for the AICTE-VAANI initiative, a scheme by AICTE to promote technical education and research in regional Indian languages. The website highlights the scheme objectives, department details, and the national seminar held on 15th–16th November 2024, organized by the Department of Computer Science & Engineering, Academy of Technology",
+            "title": "Smart Attendance Monitoring System",
+            "description": "Final year project (WIP). Automated attendance system using CCTV footage and face recognition (OpenCV) to log attendance without manual intervention.",
+            "technologies": ["Python", "OpenCV", "Deep Learning"],
+            "github": "https://github.com/Subhajitroy03/SmartAttend",
+            "demo": "#"
+        },
+        {
+            "title": "The Gnosis Week (Treasure Hunt CTF)",
+            "description": "Volunteer Service: Developed the backend architecture for a campus-wide CTF competition. Implemented secure data handling and a responsive challenge-solving system.",
+            "technologies": ["Node.js", "Express.js", "REST API"],
+            "github": "https://github.com/Subhajitroy03/treasurehunt-ctf-backend",
+            "demo": "#"
+        },
+        {
+            "title": "Vaani (AICTE Initiative)",
+            "description": "Volunteer Service: Contributed to the official website development for the AICTE-VAANI initiative to promote technical education in regional Indian languages.",
             "technologies": ["HTML", "Tailwind CSS", "JavaScript"],
             "github": "#",
             "demo": "https://www.vaani.aot.edu.in/index.html"
         },
         {
-            "title": "The Gnosis Week",
-            "description": "Volunteer Service: Contributed to backend development for the event, focusing on building and implementing core functionalities for the Treasure Hunt CTF competition. Worked closely with the tech team to ensure smooth execution, secure data handling, and a responsive challenge-solving system for participants.",
-            "technologies": ["Node.JS","ExpressJS"],
-            "github": "https://github.com/Subhajitroy03/treasurehunt-ctf-backend",
+            "title": "Pain-O-Relief",
+            "description": "Healthcare platform providing personalized exercise routines and interactive support via chatbots and live consultations.",
+            "technologies": ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "Agora"],
+            "github": "https://github.com/Subhajitroy03/Pain-O-Relief",
             "demo": "#"
         }
     ],
     "education": [
-    {
-        "degree": "School Education (CBSE)",
-        "school": "Satish Chandra Memorial School, Chakdaha, India",
-        "date": "April 2007 – June 2022",
-        "description": "Completed secondary and higher secondary education with 97% in Class 10 and 92.6% in Class 12. Scored 100% in Mathematics in Class 10, and in Class 12 secured 99 in Mathematics and 96 in Computer Science."
-    },
-    {
-        "degree": "Bachelor of Technology in Computer Science",
-        "school": "Academy of Technology",
-        "date": "2023–Present",
-        "description": "Specializing in software engineering and data structures, with hands-on experience in real-world projects. Actively participating in coding competitions and hackathons to enhance problem-solving and development skills."
-    }
-]
-,
+        {
+            "degree": "Bachelor of Technology in Computer Science and Engineering",
+            "school": "Academy of Technology",
+            "date": "2023 – 2027",
+            "description": "Core competencies include DS & Algorithms, Operating Systems, DBMS,Network and Compiler Design. Expertly trained in Java (OOP) and Software Engineering methodologies through project-based learning."
+        },
+        {
+            "degree": "Higher Secondary and Secondary Education (CBSE)",
+            "school": "Satish Chandra Memorial School, Chakdaha",
+            "date": "May 2008 – June 2022",
+            "description": "Scored 98% in Class 10 and 92.6% in Class 12. Secured 100 in Mathematics Standard in AISSE and 99 in Mathematics and 96 in Computer Science in AISSCE."
+        }
+    ],
     "contact": {
-       "email": "roysubhajit2003@gmail.com",
+        "email": "roysubhajit2003@gmail.com",
         "linkedin": "https://www.linkedin.com/in/subhajit-roy-6b2673277/",
         "github": "https://github.com/Subhajitroy03",
-        "Instagram": "https://www.instagram.com/subhajit_roy03/"
+        "instagram": "https://www.instagram.com/subhajit_roy03/"
     }
 }
