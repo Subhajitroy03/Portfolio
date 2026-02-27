@@ -9,6 +9,12 @@
     },
     "experience": [
         {
+    "date": "February 2026 - Present",
+    "title": "Full Stack Developer",
+    "company": "Indomitech Group",
+    "description": "Developing and maintaining full-stack web applications, designing scalable backend APIs, collaborating with QA and project teams, and contributing to requirement analysis and system improvements."
+        },
+        {
             "date": "October 2025 - Present",
             "title": "Tech Lead",
             "company": "IEI Student Chapter CSE, AOT",
