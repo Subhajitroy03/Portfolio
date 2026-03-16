@@ -21,14 +21,15 @@ async function loadPortfolioData() {
 // Fallback data in case JSON loading fails
 function getFallbackData() {
     return {
-        about: {
-            description: "Passionate backend and mobile app developer with 5+ years of experience building scalable server-side applications and user-friendly mobile experiences. I specialize in creating robust APIs, microservices, and cross-platform mobile applications that deliver exceptional performance and user satisfaction.",
-            skills: {
-                languages: ["Python", "Java", "C/C++", "Javascript","HTML","Kotlin"],
-                frameworks:  ["Express.JS"],
-                tools: ["PostgreSQL", "MongoDB", "Docker", "AWS", "Firebase", "mySQL", "CSS/Tailwind CSS"]
-            }
-        },
+        "about": {
+    "description": "Full-stack developer and Tech Lead with a focus on building scalable backend architectures and ML-integrated applications. Experienced in leading technical teams, managing end-to-end student projects, and delivering robust API solutions using modern frameworks.",
+    "skills": {
+        "languages": ["Python", "Java", "C/C++", "JavaScript", "TypeScript", "Kotlin", "HTML"],
+        "frameworks": ["Node.js", "Express.js", "FastAPI", "React", "Next.js"],
+        "databases_orm": ["PostgreSQL", "MongoDB", "MySQL", "Prisma", "Drizzle"],
+        "tools": ["Docker", "Redis", "AWS", "Firebase", "Tailwind CSS", "Strapi"]
+    }
+},
         experience: [
             {
                 date: "October 2025- Present",
