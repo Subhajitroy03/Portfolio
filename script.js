@@ -117,7 +117,7 @@ function populateContent() {
         // Populate skills
         if (portfolioData.about && portfolioData.about.skills) {
             populateSkills('backend-skills', portfolioData.about.skills.languages || []);
-            populateSkills('mobile-skills', portfolioData.about.skills.frameworks_libraries || []);
+            populateSkills('mobile-skills', portfolioData.about.skills.frameworks || []);
             populateSkills('tools-skills', portfolioData.about.skills.tools || []);
         }
         
