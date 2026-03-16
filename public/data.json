@@ -3,7 +3,7 @@
     "description": "Full-stack developer and Tech Lead with a focus on building scalable backend architectures and ML-integrated applications. Experienced in leading technical teams, managing end-to-end student projects, and delivering robust API solutions using modern frameworks.",
     "skills": {
         "languages": ["Python", "Java", "C/C++", "JavaScript", "TypeScript", "Kotlin", "HTML"],
-        "frameworks_libraries": ["Node.js", "Express.js", "FastAPI", "React", "Next.js", "Prisma", "Drizzle"],
+        "frameworks": ["Node.js", "Express.js", "FastAPI", "React", "Next.js", "Prisma", "Drizzle"],
         "tools": ["PostgreSQL", "MongoDB", "MySQL", "Docker", "Redis", "AWS", "Firebase", "Tailwind CSS", "Strapi"]
     }
 }
