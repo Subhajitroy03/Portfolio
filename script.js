@@ -24,15 +24,16 @@ function getFallbackData() {
         "about": {
     "description": "Full-stack developer and Tech Lead with a focus on building scalable backend architectures and ML-integrated applications. Experienced in leading technical teams, managing end-to-end student projects, and delivering robust API solutions using modern frameworks.",
     "skills": {
-        "languages": ["Python", "Java", "C/C++", "JavaScript", "TypeScript", "Kotlin", "HTML"],
-        "frameworks": ["Node.js", "Express.js", "FastAPI", "React", "Next.js"],
-        "databases_orm": ["PostgreSQL", "MongoDB", "MySQL", "Prisma", "Drizzle"],
-        "tools": ["Docker", "Redis", "AWS", "Firebase", "Tailwind CSS", "Strapi"]
+        "languages": ["Python", "C/C++", "JavaScript", "TypeScript", "Java", "C#"],
+        "backend": ["Express.js", "FastAPI"],
+        "frontend": ["React.js", "Next.js"],
+        "databases": ["MySQL", "MongoDB", "PostgreSQL", "Redis"],
+        "orm_cms": ["Prisma", "Drizzle ORM", "Strapi"]
     }
 },
         experience: [
              {
-    "date": "February 2026 - Present",
+    "date": "February 2026 - April 2026",
     "title": "Full Stack Developer",
     "company": "Indomitech Group",
     "description": "Developing and maintaining full-stack web applications, designing scalable backend APIs, collaborating with QA and project teams, and contributing to requirement analysis and system improvements."
@@ -123,9 +124,11 @@ function populateContent() {
     try {
         // Populate skills
         if (portfolioData.about && portfolioData.about.skills) {
-            populateSkills('backend-skills', portfolioData.about.skills.languages || []);
-            populateSkills('mobile-skills', portfolioData.about.skills.frameworks || []);
-            populateSkills('tools-skills', portfolioData.about.skills.tools || []);
+            populateSkills('languages-skills', portfolioData.about.skills.languages || []);
+            populateSkills('backend-skills', portfolioData.about.skills.backend || []);
+            populateSkills('frontend-skills', portfolioData.about.skills.frontend || []);
+            populateSkills('databases-skills', portfolioData.about.skills.databases || []);
+            populateSkills('orm-cms-skills', portfolioData.about.skills.orm_cms || []);
         }
         
         // Populate experience
