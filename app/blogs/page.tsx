@@ -1,9 +1,7 @@
-import type { Metadata } from "next";
-import Reveal from "@/components/Reveal";
-import NextPageArrow from "@/components/NextPageArrow";
-import ModalCards from "@/components/ModalCards";
+import EditorialJournal from "../../components/EditorialJournal";
+import { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Blogs" };
+export const metadata: Metadata = { title: "Blog" };
 
 const blogItems = [
   { 
@@ -11,30 +9,29 @@ const blogItems = [
     link: 'https://process-vs-threads.hashnode.dev/process-vs-thread-a-practical-comparison-using-c-programs', 
     title: 'Process vs Thread in C',
     subtitle: 'A Practical Comparison Using C Programs',
-    description: 'Learn the core differences between processes and threads with C examples.',
-    image: '/blogs/process-vs-thread.webp' 
+    description: 'We, as CS majors, are pretty accustomed to the theoretical definition of Process and Thread, but in this blog, we are going to explore the difference between process and thread in a practical way.',
+    image: '/blogs/process-vs-thread.webp',
+    category: 'SYSTEMS',
+    date: 'SEP 30, 2026',
+    readTime: '8 MIN READ'
   },
   { 
     id: 'cors-issue',
     link: 'https://corsissue.hashnode.dev/cors-issue-and-how-to-fix-it', 
     title: 'Fixing CORS Issues',
     subtitle: 'Understanding and resolving Cross-Origin Resource Sharing',
-    description: 'A quick guide to understanding CORS and fixing common errors.',
-    image: '/blogs/cors.webp' 
+    description: 'We, as web developers, are pretty accustomed to facing random CORS errors while integrating APIs, but in this blog, we are going to explore the root causes and learn how to fix Cross-Origin Resource Sharing in a practical way.',
+    image: '/blogs/cors.webp',
+    category: 'BACKEND',
+    date: 'SEP 15, 2026',
+    readTime: '5 MIN READ'
   }
 ];
 
 export default function Blogs() {
   return (
-    <Reveal>
-      <section className="w" style={{ paddingTop: "9rem", paddingBottom: "8rem", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-        <h1 className="xl" style={{ marginBottom: "2rem" }}><span className="ln"><span>Blogs</span></span></h1>
-        
-        <div style={{ flex: 1, width: "100%", position: "relative" }}>
-          <ModalCards items={blogItems} />
-        </div>
-      </section>
-      <NextPageArrow href="/achievements" label="Achievements" />
-    </Reveal>
-  );
+    <div style={{ minHeight: '100vh', background: 'var(--bg)' }}>
+       <EditorialJournal articles={blogItems} />
+    </div>
+  )
 }
