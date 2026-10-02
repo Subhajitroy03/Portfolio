@@ -8,8 +8,8 @@ export const metadata: Metadata = { title: "Work" };
 export default function Work() {
   return (
     <Reveal>
-      <section className="w" style={{ paddingTop: "9rem" }}>
-        <h1 className="xl" style={{ marginBottom: "5rem" }}><span className="ln"><span>Work</span></span></h1>
+      <section className="w" style={{ paddingTop: "9rem", paddingBottom: "8rem", minHeight: "100vh" }}>
+        <h1 className="xl" style={{ marginBottom: "4rem" }}><span className="ln"><span>Work</span></span></h1>
         {projects.map((p) => <Project key={p.name} p={p} full />)}
       </section>
       <NextPageArrow href="/experience" label="Experience" />
